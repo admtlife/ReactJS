@@ -1,9 +1,10 @@
 import React from 'react';
+import { MyRoutes } from './routes/index';
 
 export const App = () =>  {
   return (
-    <div className="App">
-      Olá
-    </div>
+    
+    <MyRoutes/>
+
   );
 }
