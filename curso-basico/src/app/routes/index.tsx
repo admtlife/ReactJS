@@ -1,12 +1,14 @@
-import { Route, Routes, Navigate } from "react-router-dom";
-import { BrowserRouter } from "react-router-dom";
+import { Route, Routes, BrowserRouter,  Navigate} from "react-router-dom";
+import { Dashboard } from "../pages";
+
 
 export const MyRoutes = () => {
 
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<h1>Olá Rota</h1>} />
+                <Route path="/pagina-inicial" element={<Dashboard/>} />
+                <Route path="*" element={<Navigate to="/pagina-inicial"/>} />
             </Routes>
         </BrowserRouter>
     );
